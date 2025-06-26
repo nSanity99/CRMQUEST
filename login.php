@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
-    header("Location: dashboard.php");
+    header("Location: app_selection.php");
     exit;
 }
 
@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
                         $_SESSION['username'] = $db_username;
                         $_SESSION['ruolo'] = $db_ruolo;
                         $_SESSION['user_fullname'] = $db_user_fullname;
-                        header("Location: dashboard.php");
+                        header("Location: app_selection.php");
                         exit;
                     } else {
                         $login_error = "Nome utente o password non validi.";
