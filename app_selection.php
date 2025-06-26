@@ -27,7 +27,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <img src="assets/logo.png" alt="Logo Gruppo Vitolo">
         <h1>Scegli l'applicazione</h1>
         <div class="apps">
-            <a class="app-link" href="dashboard.php">CRM - Acquisti e Segnalazioni</a>
+            <a class="app-link" href="apps/crm/dashboard.php">CRM - Acquisti e Segnalazioni</a>
             <a class="app-link disabled" href="#">App 1 (prossimamente)</a>
             <a class="app-link disabled" href="#">App 2 (prossimamente)</a>
         </div>
